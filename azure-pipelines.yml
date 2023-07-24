@@ -23,3 +23,14 @@ steps:
     scheme: 'sampleapp-ios-swift'
     packageApp: false
     publishJUnitResults: true
+- task: Xcode@5
+  inputs:
+    actions: 'archive'
+    configuration: 'Release'
+    sdk: 'iphoneos'
+    xcWorkspacePath: '*.xcworkspace'
+    scheme: 'sampleapp-ios-swift'
+    packageApp: true
+    archivePath: 'build/MyApp.xcarchive'
+    exportPath: 'build/MyApp.ipa'
+    exportArgs: '-exportArchive -exportFormat ipa'
