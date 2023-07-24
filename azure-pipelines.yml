@@ -23,3 +23,7 @@ steps:
     scheme: 'sampleapp-ios-swift'
     packageApp: false
     publishJUnitResults: true
+- task: CopyFiles@2
+  inputs:
+    contents: '**/*.ipa'
+    targetFolder: '$(build.artifactStagingDirectory)'
