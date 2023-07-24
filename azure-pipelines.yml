@@ -34,4 +34,4 @@ steps:
     archivePath: 'build/MyApp.xcarchive'
     exportPath: 'build/MyApp.ipa'
     exportOptions: 'specify'
-    exportTeamId: ""
+    exportTeamId: "GWX9XCPYYK"
