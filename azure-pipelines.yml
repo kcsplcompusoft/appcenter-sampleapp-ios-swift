@@ -33,4 +33,3 @@ steps:
     packageApp: true
     archivePath: 'build/MyApp.xcarchive'
     exportPath: 'build/MyApp.ipa'
-    exportArgs: '-exportArchive -exportFormat ipa'
